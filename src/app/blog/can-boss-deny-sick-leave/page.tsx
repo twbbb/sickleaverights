@@ -38,28 +38,28 @@ export default function CanBossDenySickLeavePage() {
 
       {/* Breadcrumb */}
       <div className="max-w-4xl mx-auto px-4 pt-6">
-        <nav className="text-sm text-gray-500 flex items-center gap-2">
-          <Link href="/" className="hover:text-blue-700">Home</Link>
+        <nav className="text-sm text-slate flex items-center gap-2">
+          <Link href="/" className="hover:text-gold">Home</Link>
           <span>/</span>
-          <span className="text-gray-700">Sick Leave Rights</span>
+          <span className="text-ink/80">Sick Leave Rights</span>
         </nav>
       </div>
 
       {/* Article Header */}
       <article className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
-          <div className="inline-block bg-red-100 text-red-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-coral/10 text-coral text-sm font-semibold px-3 py-1 rounded-full mb-4">
             Sick Leave Rights
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl text-ink leading-tight mb-4">
             Can Your Boss Deny Sick Leave? Your Complete Legal Guide (2026)
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed mb-4">
+          <p className="text-xl text-slate leading-relaxed mb-4">
             Your boss just denied your sick day request. Your heart sinks. Is this even legal? The
             short answer: <strong>it depends</strong> — and knowing the difference could save your
             job and protect your health.
           </p>
-          <div className="flex items-center gap-4 text-sm text-gray-500">
+          <div className="flex items-center gap-4 text-sm text-slate">
             <span>Updated April 14, 2026</span>
             <span>•</span>
             <span>8 min read</span>
@@ -72,8 +72,8 @@ export default function CanBossDenySickLeavePage() {
         <AdSlot slot="article-top" format="horizontal" className="h-24 mb-8" />
 
         {/* Table of Contents */}
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
-          <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wider">
+        <div className="bg-ink/5 border border-ink/10 rounded-2xl p-5 mb-10">
+          <h2 className="font-bold text-ink mb-3 text-sm uppercase tracking-wider">
             Table of Contents
           </h2>
           <ol className="space-y-1.5 text-sm">
@@ -88,7 +88,7 @@ export default function CanBossDenySickLeavePage() {
               ['#faq', 'Frequently Asked Questions'],
             ].map(([href, label]) => (
               <li key={href}>
-                <a href={href} className="text-blue-700 hover:underline">
+                <a href={href} className="text-gold-muted hover:underline">
                   {label}
                 </a>
               </li>
@@ -99,13 +99,13 @@ export default function CanBossDenySickLeavePage() {
         {/* Content */}
         <div className="prose prose-lg max-w-none">
           <section id="short-answer" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Answer</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">The Short Answer</h2>
+            <p className="text-ink/80 leading-relaxed mb-4">
               Yes, in many situations your boss <em>can</em> deny sick leave — but there are
               critical circumstances where they absolutely <strong>cannot</strong>. Whether your
               employer can legally deny your sick day depends on:
             </p>
-            <ul className="space-y-2 text-gray-700 mb-4">
+            <ul className="space-y-2 text-ink/80 mb-4">
               {[
                 'Whether you qualify for FMLA (Family and Medical Leave Act) protection',
                 'Your state\'s specific sick leave laws',
@@ -114,37 +114,37 @@ export default function CanBossDenySickLeavePage() {
                 'Whether you\'ve followed proper notification procedures',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">✓</span>
+                  <span className="text-gold mt-1">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 text-yellow-900 text-sm">
+            <div className="bg-gold/5 border border-gold/20 rounded-2xl p-4 text-gold-muted text-sm">
               <strong>Important:</strong> This guide provides general legal information, not
               legal advice. For your specific situation, consult a licensed employment attorney.
             </div>
           </section>
 
           <section id="fmla-rights" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               FMLA: Your Federal Protection
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-ink/80 leading-relaxed mb-4">
               The <strong>Family and Medical Leave Act (FMLA)</strong> is your most powerful
               federal protection. Under FMLA, eligible employees can take up to{' '}
               <strong>12 weeks of unpaid leave per year</strong> for serious health conditions — and
               your employer cannot deny this leave or retaliate against you for taking it.
             </p>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <h3 className="font-display text-xl text-ink mb-3">
               FMLA Eligibility Requirements
             </h3>
-            <p className="text-gray-700 mb-3">You qualify for FMLA if ALL of these apply:</p>
+            <p className="text-ink/80 mb-3">You qualify for FMLA if ALL of these apply:</p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full border-collapse text-sm">
                 <thead>
-                  <tr className="bg-gray-100">
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Requirement</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Details</th>
+                  <tr className="bg-cream-dark">
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Requirement</th>
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Details</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -155,15 +155,15 @@ export default function CanBossDenySickLeavePage() {
                     ['Work location', 'Works within 75 miles of a location with 50+ employees'],
                     ['Qualifying reason', 'Serious health condition, family care, or qualifying military exigency'],
                   ].map(([req, detail]) => (
-                    <tr key={req} className="border-b border-gray-200">
-                      <td className="p-3 font-medium text-gray-900 border border-gray-200">{req}</td>
-                      <td className="p-3 text-gray-600 border border-gray-200">{detail}</td>
+                    <tr key={req} className="border-b border-ink/10">
+                      <td className="p-3 font-medium text-ink border border-ink/10">{req}</td>
+                      <td className="p-3 text-slate border border-ink/10">{detail}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 mb-4">
+            <p className="text-ink/80 mb-4">
               <strong>What counts as a &quot;serious health condition&quot;?</strong> Under FMLA, this
               includes any illness, injury, impairment, or physical/mental condition requiring:
               inpatient care, or continuing treatment by a healthcare provider. A common cold or
@@ -176,8 +176,8 @@ export default function CanBossDenySickLeavePage() {
           <AdSlot slot="article-mid" format="rectangle" className="h-60 my-8" />
 
           <section id="state-laws" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">State Sick Leave Laws</h2>
-            <p className="text-gray-700 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">State Sick Leave Laws</h2>
+            <p className="text-ink/80 mb-4">
               Beyond FMLA, many states have enacted their <strong>own paid sick leave laws</strong>{' '}
               that provide even stronger protections. These state laws often cover smaller employers
               and shorter waiting periods than FMLA.
@@ -185,58 +185,58 @@ export default function CanBossDenySickLeavePage() {
             <div className="overflow-x-auto mb-6">
               <table className="w-full border-collapse text-sm">
                 <thead>
-                  <tr className="bg-blue-50">
-                    <th className="text-left p-3 font-semibold text-blue-900 border border-blue-200">State</th>
-                    <th className="text-left p-3 font-semibold text-blue-900 border border-blue-200">Paid Sick Leave Law</th>
-                    <th className="text-left p-3 font-semibold text-blue-900 border border-blue-200">Accrual Rate</th>
+                  <tr className="bg-ink/5">
+                    <th className="text-left p-3 font-semibold text-ink border border-ink/10">State</th>
+                    <th className="text-left p-3 font-semibold text-ink border border-ink/10">Paid Sick Leave Law</th>
+                    <th className="text-left p-3 font-semibold text-ink border border-ink/10">Accrual Rate</th>
                   </tr>
                 </thead>
                 <tbody>
                   {stateLaws.map((row) => (
-                    <tr key={row[0]} className="border-b border-gray-200 hover:bg-gray-50">
-                      <td className="p-3 font-medium text-gray-900 border border-gray-200">{row[0]}</td>
-                      <td className="p-3 text-gray-700 border border-gray-200">{row[1]}</td>
-                      <td className="p-3 text-gray-600 border border-gray-200">{row[2]}</td>
+                    <tr key={row[0]} className="border-b border-ink/10 hover:bg-cream-dark/50">
+                      <td className="p-3 font-medium text-ink border border-ink/10">{row[0]}</td>
+                      <td className="p-3 text-ink/80 border border-ink/10">{row[1]}</td>
+                      <td className="p-3 text-slate border border-ink/10">{row[2]}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-slate">
               * Check your state&apos;s Department of Labor for the most current requirements, as laws change.
             </p>
           </section>
 
           <section id="when-boss-can-deny" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               When Your Boss CAN Legally Deny Sick Leave
             </h2>
             <div className="space-y-4">
               {canDenyReasons.map((item) => (
-                <div key={item.title} className="bg-red-50 border border-red-200 rounded-xl p-4">
-                  <h3 className="font-semibold text-red-900 mb-1">{item.title}</h3>
-                  <p className="text-red-800 text-sm leading-relaxed">{item.desc}</p>
+                <div key={item.title} className="bg-coral/5 border border-coral/15 rounded-2xl p-4">
+                  <h3 className="font-semibold text-ink mb-1">{item.title}</h3>
+                  <p className="text-coral text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section id="when-boss-cannot" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               When Your Boss CANNOT Deny Sick Leave
             </h2>
             <div className="space-y-4">
               {cannotDenyReasons.map((item) => (
-                <div key={item.title} className="bg-green-50 border border-green-200 rounded-xl p-4">
-                  <h3 className="font-semibold text-green-900 mb-1">✓ {item.title}</h3>
-                  <p className="text-green-800 text-sm leading-relaxed">{item.desc}</p>
+                <div key={item.title} className="bg-sage/5 border border-sage/15 rounded-2xl p-4">
+                  <h3 className="font-semibold text-ink mb-1">✓ {item.title}</h3>
+                  <p className="text-sage-dark text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section id="what-to-do" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               What To Do If Your Sick Leave Is Denied
             </h2>
             <div className="space-y-4">
@@ -273,23 +273,23 @@ export default function CanBossDenySickLeavePage() {
                 },
               ].map((step) => (
                 <div key={step.step} className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                  <div className="flex-shrink-0 w-8 h-8 bg-ink text-white rounded-full flex items-center justify-center font-bold text-sm">
                     {step.step}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">{step.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
+                    <h3 className="font-semibold text-ink mb-1">{step.title}</h3>
+                    <p className="text-slate text-sm leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Job Search CTA / Affiliate */}
-            <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-5">
-              <h3 className="font-bold text-blue-900 mb-2">
+            <div className="mt-8 bg-ink/5 border border-ink/10 rounded-2xl p-5">
+              <h3 className="font-bold text-ink mb-2">
                 Ready to find a better workplace?
               </h3>
-              <p className="text-blue-800 text-sm mb-3">
+              <p className="text-ink/80 text-sm mb-3">
                 If your sick leave rights are consistently being violated, it may be time to explore
                 better opportunities. Search thousands of jobs at companies with better cultures.
               </p>
@@ -298,7 +298,7 @@ export default function CanBossDenySickLeavePage() {
                   href="https://www.indeed.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-800 transition-colors"
+                  className="bg-ink text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-ink-soft transition-colors"
                 >
                   Search Jobs on Indeed →
                 </a>
@@ -306,7 +306,7 @@ export default function CanBossDenySickLeavePage() {
                   href="https://www.ziprecruiter.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="border border-blue-300 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-100 transition-colors"
+                  className="border border-gold/30 text-gold-muted px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gold/10 transition-colors"
                 >
                   Try ZipRecruiter →
                 </a>
@@ -315,14 +315,14 @@ export default function CanBossDenySickLeavePage() {
           </section>
 
           <section id="retaliation" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               Are You Protected From Retaliation?
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-ink/80 leading-relaxed mb-4">
               <strong>Yes — if you took legally protected leave.</strong> Under FMLA and most state
               sick leave laws, your employer cannot:
             </p>
-            <ul className="space-y-2 text-gray-700 mb-4">
+            <ul className="space-y-2 text-ink/80 mb-4">
               {[
                 'Terminate you for taking FMLA or protected sick leave',
                 'Demote you or cut your pay',
@@ -331,12 +331,12 @@ export default function CanBossDenySickLeavePage() {
                 'Deny you a promotion because of protected leave',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span>
+                  <span className="text-coral mt-1">✗</span>
                   <span>Employer cannot: {item}</span>
                 </li>
               ))}
             </ul>
-            <p className="text-gray-700">
+            <p className="text-ink/80">
               If you experience retaliation for taking protected leave, you have the right to sue
               your employer. Winning FMLA retaliation cases can result in back pay, reinstatement,
               and damages.
@@ -347,29 +347,29 @@ export default function CanBossDenySickLeavePage() {
           <AdSlot slot="article-bottom" format="horizontal" className="h-24 my-8" />
 
           <section id="faq" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="font-display text-2xl text-ink mb-6">
               Frequently Asked Questions
             </h2>
             <div className="space-y-5">
               {articleFaqs.map((faq) => (
-                <div key={faq.q} className="border-b border-gray-200 pb-5">
-                  <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                <div key={faq.q} className="border-b border-ink/10 pb-5">
+                  <h3 className="font-semibold text-ink mb-2">{faq.q}</h3>
+                  <p className="text-slate text-sm leading-relaxed">{faq.a}</p>
                 </div>
               ))}
             </div>
           </section>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-r from-ink to-ink-soft text-white rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-3">Thinking of Moving On?</h2>
-            <p className="text-blue-100 mb-6">
+            <p className="text-sage-light mb-6">
               If a toxic workplace is the issue, our free resignation letter generator can help you
               leave professionally — on your own terms.
             </p>
             <Link
               href="/resignation-letter-generator/"
-              className="inline-block bg-white text-blue-700 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors"
+              className="inline-block bg-paper text-gold-muted px-8 py-3 rounded-2xl font-bold hover:bg-ink/5 transition-colors"
             >
               Generate Free Resignation Letter →
             </Link>

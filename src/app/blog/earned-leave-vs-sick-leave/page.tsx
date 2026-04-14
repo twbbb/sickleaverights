@@ -35,27 +35,27 @@ export default function EarnedLeaveVsSickLeavePage() {
 
       {/* Breadcrumb */}
       <div className="max-w-4xl mx-auto px-4 pt-6">
-        <nav className="text-sm text-gray-500 flex items-center gap-2">
-          <Link href="/" className="hover:text-blue-700">Home</Link>
+        <nav className="text-sm text-slate flex items-center gap-2">
+          <Link href="/" className="hover:text-gold">Home</Link>
           <span>/</span>
-          <span className="text-gray-700">Leave Types Guide</span>
+          <span className="text-ink/80">Leave Types Guide</span>
         </nav>
       </div>
 
       <article className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
-          <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-gold/10 text-gold-muted text-sm font-semibold px-3 py-1 rounded-full mb-4">
             Leave Types Guide
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl text-ink leading-tight mb-4">
             Earned Leave vs Sick Leave: Key Differences Explained (2025)
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed mb-4">
+          <p className="text-xl text-slate leading-relaxed mb-4">
             Confused about the difference between earned leave, sick leave, PTO, and casual leave?
             You&apos;re not alone. This guide breaks down every type of employee leave in plain
             English — so you can use your entitlements confidently.
           </p>
-          <div className="flex items-center gap-4 text-sm text-gray-500">
+          <div className="flex items-center gap-4 text-sm text-slate">
             <span>April 14, 2026</span>
             <span>•</span>
             <span>7 min read</span>
@@ -65,31 +65,31 @@ export default function EarnedLeaveVsSickLeavePage() {
         <AdSlot slot="article-top" format="horizontal" className="h-24 mb-8" />
 
         {/* Quick Reference Table */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 mb-10 border border-blue-100">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
+        <div className="bg-gradient-to-br from-ink/5 to-sage/5 rounded-2xl p-6 mb-10 border border-ink/5">
+          <h2 className="font-display text-xl text-ink mb-4">
             Quick Reference: Earned Leave vs Sick Leave
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-sm">
               <thead>
-                <tr className="bg-white">
-                  <th className="text-left p-3 font-semibold text-gray-700 border border-blue-200 rounded-tl-lg">
+                <tr className="bg-paper">
+                  <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10 rounded-tl-lg">
                     Feature
                   </th>
-                  <th className="text-left p-3 font-semibold text-blue-700 border border-blue-200 bg-blue-50">
+                  <th className="text-left p-3 font-semibold text-gold-muted border border-ink/10 bg-ink/5">
                     Earned Leave
                   </th>
-                  <th className="text-left p-3 font-semibold text-green-700 border border-blue-200 bg-green-50">
+                  <th className="text-left p-3 font-semibold text-green-700 border border-ink/10 bg-sage/5">
                     Sick Leave
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonRows.map(([feature, earned, sick], i) => (
-                  <tr key={feature} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="p-3 font-medium text-gray-800 border border-blue-100">{feature}</td>
-                    <td className="p-3 text-gray-700 border border-blue-100">{earned}</td>
-                    <td className="p-3 text-gray-700 border border-blue-100">{sick}</td>
+                  <tr key={feature} className={i % 2 === 0 ? 'bg-paper' : 'bg-cream-dark/50'}>
+                    <td className="p-3 font-medium text-gray-800 border border-ink/5">{feature}</td>
+                    <td className="p-3 text-ink/80 border border-ink/5">{earned}</td>
+                    <td className="p-3 text-ink/80 border border-ink/5">{sick}</td>
                   </tr>
                 ))}
               </tbody>
@@ -99,17 +99,17 @@ export default function EarnedLeaveVsSickLeavePage() {
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is Earned Leave?</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">What Is Earned Leave?</h2>
+            <p className="text-ink/80 leading-relaxed mb-4">
               <strong>Earned leave</strong> (also called <em>privilege leave</em>,{' '}
               <em>annual leave</em>, or <em>vacation leave</em>) is paid time off that you
               accumulate over time based on how long you have worked. The name says it all — you{' '}
               <em>earn</em> this leave through your work.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-ink/80 leading-relaxed mb-4">
               Key characteristics of earned leave:
             </p>
-            <ul className="space-y-2 text-gray-700 mb-6">
+            <ul className="space-y-2 text-ink/80 mb-6">
               {[
                 'Accrues over time (e.g., 1.25 days per month = 15 days per year)',
                 'Can be planned and requested in advance',
@@ -118,13 +118,13 @@ export default function EarnedLeaveVsSickLeavePage() {
                 'May be paid out upon resignation or termination in some states',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">→</span>
+                  <span className="text-gold mt-1">→</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-xl">
-              <p className="text-blue-900 text-sm">
+            <div className="bg-ink/5 border-l-4 border-blue-500 p-4 rounded-r-xl">
+              <p className="text-ink text-sm">
                 <strong>US Note:</strong> The US has no federal law requiring paid vacation/earned
                 leave. Employer policies vary widely. However, if your company offers it, they must
                 honor what&apos;s in your contract or handbook.
@@ -133,16 +133,16 @@ export default function EarnedLeaveVsSickLeavePage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is Sick Leave?</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">What Is Sick Leave?</h2>
+            <p className="text-ink/80 leading-relaxed mb-4">
               <strong>Sick leave</strong> is specifically designated time off for illness, injury,
               medical appointments, or caring for a sick family member. Unlike earned leave, it is
               meant to be used only when you are unwell.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-ink/80 leading-relaxed mb-4">
               Key characteristics of sick leave:
             </p>
-            <ul className="space-y-2 text-gray-700 mb-6">
+            <ul className="space-y-2 text-ink/80 mb-6">
               {[
                 'Used for illness, injury, medical visits, or family care',
                 'Often does not require advance notice (emergencies happen)',
@@ -162,42 +162,42 @@ export default function EarnedLeaveVsSickLeavePage() {
           <AdSlot slot="article-mid" format="rectangle" className="h-60 my-8" />
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               Other Types of Leave: Complete Glossary
             </h2>
             <div className="space-y-4">
               {otherLeaveTypes.map((leave) => (
-                <div key={leave.name} className="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                  <h3 className="font-bold text-gray-900 mb-1">
+                <div key={leave.name} className="bg-cream-dark/50 rounded-2xl p-4 border border-ink/10">
+                  <h3 className="font-bold text-ink mb-1">
                     {leave.name}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{leave.desc}</p>
+                  <p className="text-slate text-sm leading-relaxed">{leave.desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               Country Comparison: US vs India vs UK
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
                 <thead>
-                  <tr className="bg-gray-100">
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Aspect</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">USA</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">India</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">UK</th>
+                  <tr className="bg-cream-dark">
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Aspect</th>
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">USA</th>
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">India</th>
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">UK</th>
                   </tr>
                 </thead>
                 <tbody>
                   {countryComparison.map(([aspect, us, india, uk], i) => (
-                    <tr key={aspect} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="p-3 font-medium text-gray-800 border border-gray-200">{aspect}</td>
-                      <td className="p-3 text-gray-700 border border-gray-200">{us}</td>
-                      <td className="p-3 text-gray-700 border border-gray-200">{india}</td>
-                      <td className="p-3 text-gray-700 border border-gray-200">{uk}</td>
+                    <tr key={aspect} className={i % 2 === 0 ? 'bg-paper' : 'bg-cream-dark/50'}>
+                      <td className="p-3 font-medium text-gray-800 border border-ink/10">{aspect}</td>
+                      <td className="p-3 text-ink/80 border border-ink/10">{us}</td>
+                      <td className="p-3 text-ink/80 border border-ink/10">{india}</td>
+                      <td className="p-3 text-ink/80 border border-ink/10">{uk}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -206,20 +206,20 @@ export default function EarnedLeaveVsSickLeavePage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="font-display text-2xl text-ink mb-6">
               Common Misconceptions About Leave Types
             </h2>
             <div className="space-y-4">
               {misconceptions.map((item) => (
                 <div key={item.myth} className="flex gap-4 items-start">
                   <div className="flex-shrink-0 mt-1">
-                    <span className="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">MYTH</span>
+                    <span className="bg-coral/10 text-red-600 text-xs font-bold px-2 py-1 rounded">MYTH</span>
                   </div>
                   <div className="flex-1">
-                    <p className="font-semibold text-gray-900 mb-1">&ldquo;{item.myth}&rdquo;</p>
+                    <p className="font-semibold text-ink mb-1">&ldquo;{item.myth}&rdquo;</p>
                     <div className="flex gap-2 items-start">
                       <span className="bg-green-100 text-green-600 text-xs font-bold px-2 py-1 rounded flex-shrink-0 mt-0.5">FACT</span>
-                      <p className="text-gray-600 text-sm">{item.fact}</p>
+                      <p className="text-slate text-sm">{item.fact}</p>
                     </div>
                   </div>
                 </div>
@@ -230,34 +230,34 @@ export default function EarnedLeaveVsSickLeavePage() {
           <AdSlot slot="article-bottom" format="horizontal" className="h-24 my-8" />
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">FAQ</h2>
+            <h2 className="font-display text-2xl text-ink mb-6">FAQ</h2>
             <div className="space-y-5">
               {pageFaqs.map((faq) => (
-                <div key={faq.q} className="border-b border-gray-200 pb-5">
-                  <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                <div key={faq.q} className="border-b border-ink/10 pb-5">
+                  <h3 className="font-semibold text-ink mb-2">{faq.q}</h3>
+                  <p className="text-slate text-sm leading-relaxed">{faq.a}</p>
                 </div>
               ))}
             </div>
           </section>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-r from-ink to-ink-soft text-white rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-3">Need to Write a Resignation Letter?</h2>
-            <p className="text-blue-100 mb-6">
+            <p className="text-sage-light mb-6">
               Whether you&apos;re leaving because of leave policy issues or moving to a better
               opportunity, our free generator makes it effortless.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/resignation-letter-generator/"
-                className="inline-block bg-white text-blue-700 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors"
+                className="inline-block bg-paper text-gold-muted px-8 py-3 rounded-2xl font-bold hover:bg-ink/5 transition-colors"
               >
                 Generate Free Resignation Letter →
               </Link>
               <Link
                 href="/blog/can-boss-deny-sick-leave/"
-                className="inline-block border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-colors"
+                className="inline-block border-2 border-white text-white px-8 py-3 rounded-2xl font-bold hover:bg-paper/10 transition-colors"
               >
                 Can Boss Deny Sick Leave?
               </Link>

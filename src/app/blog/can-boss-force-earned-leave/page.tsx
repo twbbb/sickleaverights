@@ -49,29 +49,29 @@ export default function CanBossForceEarnedLeavePage() {
 
       {/* Breadcrumb */}
       <div className="max-w-4xl mx-auto px-4 pt-6">
-        <nav className="text-sm text-gray-500 flex items-center gap-2">
-          <Link href="/" className="hover:text-blue-700">Home</Link>
+        <nav className="text-sm text-slate flex items-center gap-2">
+          <Link href="/" className="hover:text-gold">Home</Link>
           <span>/</span>
-          <Link href="/blog/can-boss-deny-sick-leave/" className="hover:text-blue-700">Sick Leave Rights</Link>
+          <Link href="/blog/can-boss-deny-sick-leave/" className="hover:text-gold">Sick Leave Rights</Link>
           <span>/</span>
-          <span className="text-gray-700">Can Boss Force Earned Leave</span>
+          <span className="text-ink/80">Can Boss Force Earned Leave</span>
         </nav>
       </div>
 
       <article className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
-          <div className="inline-block bg-orange-100 text-orange-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-gold/10 text-gold-muted text-sm font-semibold px-3 py-1 rounded-full mb-4">
             Trending This Week
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl text-ink leading-tight mb-4">
             Can Your Boss Force You to Use Earned Leave Instead of Sick Leave?
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed mb-4">
+          <p className="text-xl text-slate leading-relaxed mb-4">
             You called in sick. Your manager replies: <em>&ldquo;Use your earned leave / PTO for this.&rdquo;</em>{' '}
             Or worse: <em>&ldquo;Are you informing me or requesting approval?&rdquo;</em>{' '}
             This is happening to thousands of workers right now — and it may be <strong>illegal</strong>.
           </p>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-slate">
             <span>Updated April 14, 2026</span>
             <span>•</span>
             <span>7 min read</span>
@@ -84,7 +84,7 @@ export default function CanBossForceEarnedLeavePage() {
         <AdSlot slot="article-top" format="horizontal" className="h-24 mb-8" />
 
         {/* Viral Context Box */}
-        <div className="bg-orange-50 border border-orange-200 rounded-xl p-5 mb-10">
+        <div className="bg-orange-50 border border-orange-200 rounded-2xl p-5 mb-10">
           <h2 className="font-bold text-orange-900 mb-3 flex items-center gap-2">
             Why This Is Trending Right Now
           </h2>
@@ -102,8 +102,8 @@ export default function CanBossForceEarnedLeavePage() {
         </div>
 
         {/* Table of Contents */}
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
-          <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wider">
+        <div className="bg-ink/5 border border-ink/10 rounded-2xl p-5 mb-10">
+          <h2 className="font-bold text-ink mb-3 text-sm uppercase tracking-wider">
             Table of Contents
           </h2>
           <ol className="space-y-1.5 text-sm">
@@ -119,7 +119,7 @@ export default function CanBossForceEarnedLeavePage() {
               ['#faq', 'Frequently Asked Questions'],
             ].map(([href, label]) => (
               <li key={href}>
-                <a href={href} className="text-blue-700 hover:underline">{label}</a>
+                <a href={href} className="text-gold-muted hover:underline">{label}</a>
               </li>
             ))}
           </ol>
@@ -129,65 +129,65 @@ export default function CanBossForceEarnedLeavePage() {
 
           {/* Short Answer */}
           <section id="short-answer" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Answer</h2>
+            <h2 className="font-display text-2xl text-ink mb-4">The Short Answer</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-              <div className="bg-red-50 border border-red-200 rounded-xl p-4">
-                <h3 className="font-bold text-red-900 mb-2">Generally NOT Legal</h3>
-                <p className="text-red-800 text-sm leading-relaxed">
+              <div className="bg-coral/5 border border-coral/15 rounded-2xl p-4">
+                <h3 className="font-bold text-ink mb-2">Generally NOT Legal</h3>
+                <p className="text-coral text-sm leading-relaxed">
                   If you have accrued sick leave available, your employer <strong>cannot force you to use vacation/earned leave</strong> instead — especially for FMLA-qualifying conditions or in states with mandatory sick leave laws.
                 </p>
               </div>
-              <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-                <h3 className="font-bold text-yellow-900 mb-2">Sometimes Allowed</h3>
+              <div className="bg-gold/5 border border-yellow-200 rounded-2xl p-4">
+                <h3 className="font-bold text-gold-muted mb-2">Sometimes Allowed</h3>
                 <p className="text-yellow-800 text-sm leading-relaxed">
                   In states without mandatory sick leave laws, and for non-FMLA absences, employers may have more discretion — <strong>but only if their written policy explicitly states this</strong>.
                 </p>
               </div>
             </div>
-            <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 text-yellow-900 text-sm">
+            <div className="bg-gold/5 border border-gold/20 rounded-2xl p-4 text-gold-muted text-sm">
               <strong>Disclaimer:</strong> This guide provides general legal information, not legal advice. For your specific situation, consult a licensed employment attorney.
             </div>
           </section>
 
           {/* Key Difference */}
           <section id="what-is-earned-leave" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Earned Leave vs Sick Leave: The Key Difference</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">Earned Leave vs Sick Leave: The Key Difference</h2>
+            <p className="text-ink/80 leading-relaxed mb-4">
               These are <strong>two separate entitlements</strong> that exist for different purposes. Conflating them is exactly what some employers try to do — and it costs workers real money.
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full border-collapse text-sm">
                 <thead>
-                  <tr className="bg-gray-100">
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Aspect</th>
-                    <th className="text-left p-3 font-semibold text-blue-700 border border-gray-200 bg-blue-50">Earned Leave / PTO</th>
-                    <th className="text-left p-3 font-semibold text-green-700 border border-gray-200 bg-green-50">Sick Leave</th>
+                  <tr className="bg-cream-dark">
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Aspect</th>
+                    <th className="text-left p-3 font-semibold text-gold-muted border border-ink/10 bg-ink/5">Earned Leave / PTO</th>
+                    <th className="text-left p-3 font-semibold text-green-700 border border-ink/10 bg-sage/5">Sick Leave</th>
                   </tr>
                 </thead>
                 <tbody>
                   {leaveComparisonRows.map(([aspect, earned, sick], i) => (
-                    <tr key={aspect} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="p-3 font-medium text-gray-800 border border-gray-200">{aspect}</td>
-                      <td className="p-3 text-gray-700 border border-gray-200">{earned}</td>
-                      <td className="p-3 text-gray-700 border border-gray-200">{sick}</td>
+                    <tr key={aspect} className={i % 2 === 0 ? 'bg-paper' : 'bg-cream-dark/50'}>
+                      <td className="p-3 font-medium text-gray-800 border border-ink/10">{aspect}</td>
+                      <td className="p-3 text-ink/80 border border-ink/10">{earned}</td>
+                      <td className="p-3 text-ink/80 border border-ink/10">{sick}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-ink/80 leading-relaxed">
               <strong>Why does this matter?</strong> Earned leave often has a cash value — in many US states (like California), unused vacation must be paid out when you leave. Sick leave typically is not. If your employer forces you to use vacation for illness, you&apos;re losing money that you&apos;re legally entitled to.
             </p>
           </section>
 
           {/* When Legal */}
           <section id="when-legal" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">When Can Your Boss Legally Force Earned Leave?</h2>
+            <h2 className="font-display text-2xl text-ink mb-4">When Can Your Boss Legally Force Earned Leave?</h2>
             <div className="space-y-4">
               {whenLegalReasons.map((item) => (
-                <div key={item.title} className="bg-gray-50 border border-gray-200 rounded-xl p-4">
-                  <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                <div key={item.title} className="bg-cream-dark/50 border border-ink/10 rounded-2xl p-4">
+                  <h3 className="font-semibold text-ink mb-1">{item.title}</h3>
+                  <p className="text-slate text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -195,12 +195,12 @@ export default function CanBossForceEarnedLeavePage() {
 
           {/* When Illegal */}
           <section id="when-illegal" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">When It Is Illegal to Force Earned Leave</h2>
+            <h2 className="font-display text-2xl text-ink mb-4">When It Is Illegal to Force Earned Leave</h2>
             <div className="space-y-4">
               {whenIllegalReasons.map((item) => (
-                <div key={item.title} className="bg-red-50 border border-red-200 rounded-xl p-4">
-                  <h3 className="font-semibold text-red-900 mb-1">{item.title}</h3>
-                  <p className="text-red-800 text-sm leading-relaxed">{item.desc}</p>
+                <div key={item.title} className="bg-coral/5 border border-coral/15 rounded-2xl p-4">
+                  <h3 className="font-semibold text-ink mb-1">{item.title}</h3>
+                  <p className="text-coral text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -211,52 +211,52 @@ export default function CanBossForceEarnedLeavePage() {
 
           {/* FMLA Concurrent Use */}
           <section id="fmla-concurrent" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">The FMLA Concurrent Use Rule (Important!)</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">The FMLA Concurrent Use Rule (Important!)</h2>
+            <p className="text-ink/80 leading-relaxed mb-4">
               Here&apos;s where it gets nuanced. Under FMLA, your employer <strong>CAN require you to use accrued paid leave (including vacation/PTO) concurrently with FMLA leave</strong> — but only if their written policy says so.
             </p>
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-4">
-              <h3 className="font-semibold text-blue-900 mb-2">What &ldquo;Concurrent Use&rdquo; Means</h3>
-              <p className="text-blue-800 text-sm leading-relaxed mb-3">
+            <div className="bg-ink/5 border border-ink/10 rounded-2xl p-5 mb-4">
+              <h3 className="font-semibold text-ink mb-2">What &ldquo;Concurrent Use&rdquo; Means</h3>
+              <p className="text-ink/80 text-sm leading-relaxed mb-3">
                 If you take 12 weeks of FMLA leave, your employer can require that your accrued PTO/vacation runs simultaneously — so you&apos;re paid during FMLA instead of taking unpaid leave. This is <em>not</em> the same as denying your sick leave.
               </p>
-              <div className="bg-white rounded-lg p-3 border border-blue-100">
-                <p className="text-sm text-gray-700">
+              <div className="bg-paper rounded-lg p-3 border border-ink/5">
+                <p className="text-sm text-ink/80">
                   <strong>Key distinction:</strong> They can make your paid leave <em>run alongside</em> FMLA. They <strong>cannot</strong> make you use vacation <em>instead of</em> sick leave when sick leave is available and the absence qualifies for sick leave.
                 </p>
               </div>
             </div>
-            <p className="text-gray-700 text-sm">
+            <p className="text-ink/80 text-sm">
               <strong>Bottom line:</strong> If your employer is saying &ldquo;use your vacation days because you&apos;re sick,&rdquo; that&apos;s different from the FMLA concurrent use rule. The former may be illegal; the latter is permitted under specific conditions.
             </p>
           </section>
 
           {/* India Section */}
           <section id="india-rules" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-2xl text-ink mb-4">
               India-Specific Rules: EL, CL, SL, and LWP
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-ink/80 leading-relaxed mb-4">
               The recent <strong>Noida founder incident</strong> (April 2026) — where a startup founder refused to approve a same-day sick leave and threatened to mark it as Leave Without Pay (LWP) — highlights a common misunderstanding of Indian labor law.
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full border-collapse text-sm">
                 <thead>
-                  <tr className="bg-gray-100">
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Leave Type</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Full Name</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Purpose</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Can Employer Force Substitution?</th>
+                  <tr className="bg-cream-dark">
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Leave Type</th>
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Full Name</th>
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Purpose</th>
+                    <th className="text-left p-3 font-semibold text-ink/80 border border-ink/10">Can Employer Force Substitution?</th>
                   </tr>
                 </thead>
                 <tbody>
                   {indiaLeaveTypes.map(([type, full, purpose, canForce], i) => (
-                    <tr key={type} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="p-3 font-bold text-gray-900 border border-gray-200">{type}</td>
-                      <td className="p-3 text-gray-700 border border-gray-200">{full}</td>
-                      <td className="p-3 text-gray-600 border border-gray-200">{purpose}</td>
-                      <td className="p-3 border border-gray-200">
-                        <span className={`text-xs font-semibold px-2 py-0.5 rounded ${canForce === 'No' ? 'bg-red-100 text-red-700' : canForce === 'Sometimes' ? 'bg-yellow-100 text-yellow-700' : 'bg-gray-100 text-gray-600'}`}>
+                    <tr key={type} className={i % 2 === 0 ? 'bg-paper' : 'bg-cream-dark/50'}>
+                      <td className="p-3 font-bold text-ink border border-ink/10">{type}</td>
+                      <td className="p-3 text-ink/80 border border-ink/10">{full}</td>
+                      <td className="p-3 text-slate border border-ink/10">{purpose}</td>
+                      <td className="p-3 border border-ink/10">
+                        <span className={`text-xs font-semibold px-2 py-0.5 rounded ${canForce === 'No' ? 'bg-coral/10 text-coral' : canForce === 'Sometimes' ? 'bg-yellow-100 text-yellow-700' : 'bg-cream-dark text-slate'}`}>
                           {canForce}
                         </span>
                       </td>
@@ -265,7 +265,7 @@ export default function CanBossForceEarnedLeavePage() {
                 </tbody>
               </table>
             </div>
-            <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
+            <div className="bg-orange-50 border border-orange-200 rounded-2xl p-4">
               <h3 className="font-semibold text-orange-900 mb-2">What Indian Law Actually Says</h3>
               <ul className="space-y-2 text-orange-800 text-sm">
                 {[
@@ -285,27 +285,27 @@ export default function CanBossForceEarnedLeavePage() {
 
           {/* What To Do */}
           <section id="what-to-do" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">6 Steps to Take Right Now</h2>
+            <h2 className="font-display text-2xl text-ink mb-4">6 Steps to Take Right Now</h2>
             <div className="space-y-4">
               {actionSteps.map((step) => (
                 <div key={step.step} className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                  <div className="flex-shrink-0 w-8 h-8 bg-ink text-white rounded-full flex items-center justify-center font-bold text-sm">
                     {step.step}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">{step.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
+                    <h3 className="font-semibold text-ink mb-1">{step.title}</h3>
+                    <p className="text-slate text-sm leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Job Search CTA */}
-            <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-5">
-              <h3 className="font-bold text-blue-900 mb-2">
+            <div className="mt-8 bg-ink/5 border border-ink/10 rounded-2xl p-5">
+              <h3 className="font-bold text-ink mb-2">
                 Is this a pattern? It might be time to move on.
               </h3>
-              <p className="text-blue-800 text-sm mb-3">
+              <p className="text-ink/80 text-sm mb-3">
                 If your employer consistently violates your leave rights, that&apos;s a red flag about the entire culture. Thousands of employees use these platforms to find workplaces that actually respect their rights.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -313,7 +313,7 @@ export default function CanBossForceEarnedLeavePage() {
                   href="https://www.indeed.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-800 transition-colors"
+                  className="bg-ink text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-ink-soft transition-colors"
                 >
                   Search Jobs on Indeed →
                 </a>
@@ -321,7 +321,7 @@ export default function CanBossForceEarnedLeavePage() {
                   href="https://www.ziprecruiter.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="border border-blue-300 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-100 transition-colors"
+                  className="border border-gold/30 text-gold-muted px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gold/10 transition-colors"
                 >
                   Try ZipRecruiter →
                 </a>
@@ -331,22 +331,22 @@ export default function CanBossForceEarnedLeavePage() {
 
           {/* Scripts */}
           <section id="scripts" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Say to Your Manager</h2>
-            <p className="text-gray-700 mb-5">
+            <h2 className="font-display text-2xl text-ink mb-4">What to Say to Your Manager</h2>
+            <p className="text-ink/80 mb-5">
               Use these professionally worded responses to push back without escalating unnecessarily.
             </p>
             <div className="space-y-5">
               {responseScripts.map((script) => (
-                <div key={script.scenario} className="border border-gray-200 rounded-xl overflow-hidden">
-                  <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
-                    <span className="text-sm font-semibold text-gray-700">Scenario: {script.scenario}</span>
+                <div key={script.scenario} className="border border-ink/10 rounded-2xl overflow-hidden">
+                  <div className="bg-cream-dark/50 px-4 py-2 border-b border-ink/10">
+                    <span className="text-sm font-semibold text-ink/80">Scenario: {script.scenario}</span>
                   </div>
                   <div className="p-4">
-                    <p className="text-xs text-gray-500 mb-2 uppercase tracking-wide font-medium">What to say:</p>
-                    <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg text-sm text-gray-800 italic leading-relaxed">
+                    <p className="text-xs text-slate mb-2 uppercase tracking-wide font-medium">What to say:</p>
+                    <blockquote className="bg-ink/5 border-l-4 border-blue-500 p-3 rounded-r-lg text-sm text-gray-800 italic leading-relaxed">
                       &ldquo;{script.response}&rdquo;
                     </blockquote>
-                    <p className="text-xs text-gray-500 mt-2">{script.note}</p>
+                    <p className="text-xs text-slate mt-2">{script.note}</p>
                   </div>
                 </div>
               ))}
@@ -358,33 +358,33 @@ export default function CanBossForceEarnedLeavePage() {
 
           {/* FAQ */}
           <section id="faq" className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+            <h2 className="font-display text-2xl text-ink mb-6">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {pageFaqs.map((faq) => (
-                <div key={faq.q} className="border-b border-gray-200 pb-5">
-                  <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                <div key={faq.q} className="border-b border-ink/10 pb-5">
+                  <h3 className="font-semibold text-ink mb-2">{faq.q}</h3>
+                  <p className="text-slate text-sm leading-relaxed">{faq.a}</p>
                 </div>
               ))}
             </div>
           </section>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-r from-ink to-ink-soft text-white rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-3">Ready to Leave on Your Own Terms?</h2>
-            <p className="text-blue-100 mb-6">
+            <p className="text-sage-light mb-6">
               If a toxic workplace is the issue, our free resignation letter generator helps you leave professionally — protecting your reputation and references.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/resignation-letter-generator/"
-                className="inline-block bg-white text-blue-700 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors"
+                className="inline-block bg-paper text-gold-muted px-8 py-3 rounded-2xl font-bold hover:bg-ink/5 transition-colors"
               >
                 Generate Free Resignation Letter →
               </Link>
               <Link
                 href="/blog/can-boss-deny-sick-leave/"
-                className="inline-block border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-colors"
+                className="inline-block border-2 border-white text-white px-8 py-3 rounded-2xl font-bold hover:bg-paper/10 transition-colors"
               >
                 Can Boss Deny Sick Leave?
               </Link>

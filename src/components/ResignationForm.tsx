@@ -6,11 +6,11 @@ import { generateLetter, type FormData } from '@/lib/generate-letter';
 import LetterPreview from './LetterPreview';
 
 const toneColors: Record<string, string> = {
-  professional: 'bg-blue-50 border-blue-200 text-blue-800',
-  formal: 'bg-purple-50 border-purple-200 text-purple-800',
-  friendly: 'bg-green-50 border-green-200 text-green-800',
-  firm: 'bg-red-50 border-red-200 text-red-800',
-  positive: 'bg-yellow-50 border-yellow-200 text-yellow-800',
+  professional: 'bg-ink/5 border-ink/10 text-ink',
+  formal: 'bg-sage/10 border-sage/20 text-sage-dark',
+  friendly: 'bg-gold/10 border-gold/20 text-gold-muted',
+  firm: 'bg-coral/10 border-coral/20 text-coral',
+  positive: 'bg-sage/10 border-sage-light text-sage-dark',
 };
 
 const toneIcons: Record<string, string> = {
@@ -40,6 +40,10 @@ export default function ResignationForm() {
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    // Clear error on change
+    if (errors[e.target.name as keyof FormData]) {
+      setErrors((prev) => ({ ...prev, [e.target.name]: undefined }));
+    }
   }
 
   function handleTemplateSelect(id: string) {
@@ -75,26 +79,33 @@ export default function ResignationForm() {
       {/* Form Panel */}
       <div>
         {/* Template Selector */}
-        <div className="mb-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-3">1. Choose Your Tone</h2>
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-8 h-8 bg-ink rounded-lg flex items-center justify-center text-gold font-display text-sm">1</span>
+            <h2 className="font-display text-lg text-ink">Choose Your Tone</h2>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {templates.map((t) => (
               <button
                 key={t.id}
                 onClick={() => handleTemplateSelect(t.id)}
-                className={`text-left p-3 rounded-xl border-2 transition-all ${
+                className={`text-left p-4 rounded-xl border-2 transition-all ${
                   formData.templateId === t.id
-                    ? 'border-blue-600 bg-blue-50'
-                    : 'border-gray-200 hover:border-blue-300 bg-white'
+                    ? 'border-gold bg-gold/5 shadow-sm'
+                    : 'border-ink/5 hover:border-ink/15 bg-paper'
                 }`}
               >
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-xs font-bold bg-gray-200 text-gray-700 px-1.5 py-0.5 rounded">{toneIcons[t.tone] || 'DOC'}</span>
-                  <span className="font-semibold text-sm text-gray-900">{t.name}</span>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className={`text-xs font-bold px-1.5 py-0.5 rounded ${
+                    formData.templateId === t.id ? 'bg-gold/20 text-gold-muted' : 'bg-ink/5 text-slate'
+                  }`}>
+                    {toneIcons[t.tone] || 'DOC'}
+                  </span>
+                  <span className="font-semibold text-sm text-ink">{t.name}</span>
                 </div>
-                <p className="text-xs text-gray-500 leading-relaxed">{t.description}</p>
+                <p className="text-xs text-slate leading-relaxed">{t.description}</p>
                 <span
-                  className={`inline-block mt-2 text-xs px-2 py-0.5 rounded border ${toneColors[t.tone] || 'bg-gray-50 border-gray-200 text-gray-600'}`}
+                  className={`inline-block mt-2 text-xs px-2 py-0.5 rounded border ${toneColors[t.tone] || 'bg-ink/5 border-ink/10 text-slate'}`}
                 >
                   {t.tone}
                 </span>
@@ -105,12 +116,15 @@ export default function ResignationForm() {
 
         {/* Details Form */}
         <div>
-          <h2 className="text-lg font-semibold text-gray-900 mb-3">2. Fill In Your Details</h2>
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-8 h-8 bg-ink rounded-lg flex items-center justify-center text-gold font-display text-sm">2</span>
+            <h2 className="font-display text-lg text-ink">Fill In Your Details</h2>
+          </div>
           <div className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Name <span className="text-red-500">*</span>
+                <label className="block text-sm font-medium text-ink mb-1.5">
+                  Your Name <span className="text-coral">*</span>
                 </label>
                 <input
                   type="text"
@@ -118,15 +132,15 @@ export default function ResignationForm() {
                   value={formData.yourName}
                   onChange={handleChange}
                   placeholder="Jane Smith"
-                  className={`w-full border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                    errors.yourName ? 'border-red-400 bg-red-50' : 'border-gray-300'
+                  className={`w-full border rounded-xl px-4 py-3 text-sm bg-paper focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all ${
+                    errors.yourName ? 'border-coral bg-coral/5' : 'border-ink/10'
                   }`}
                 />
-                {errors.yourName && <p className="text-red-500 text-xs mt-1">{errors.yourName}</p>}
+                {errors.yourName && <p className="text-coral text-xs mt-1">{errors.yourName}</p>}
               </div>
               <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Manager&apos;s Name <span className="text-red-500">*</span>
+                <label className="block text-sm font-medium text-ink mb-1.5">
+                  Manager&apos;s Name <span className="text-coral">*</span>
                 </label>
                 <input
                   type="text"
@@ -134,17 +148,17 @@ export default function ResignationForm() {
                   value={formData.managerName}
                   onChange={handleChange}
                   placeholder="John Doe"
-                  className={`w-full border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                    errors.managerName ? 'border-red-400 bg-red-50' : 'border-gray-300'
+                  className={`w-full border rounded-xl px-4 py-3 text-sm bg-paper focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all ${
+                    errors.managerName ? 'border-coral bg-coral/5' : 'border-ink/10'
                   }`}
                 />
-                {errors.managerName && <p className="text-red-500 text-xs mt-1">{errors.managerName}</p>}
+                {errors.managerName && <p className="text-coral text-xs mt-1">{errors.managerName}</p>}
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Company Name <span className="text-red-500">*</span>
+                <label className="block text-sm font-medium text-ink mb-1.5">
+                  Company Name <span className="text-coral">*</span>
                 </label>
                 <input
                   type="text"
@@ -152,33 +166,33 @@ export default function ResignationForm() {
                   value={formData.companyName}
                   onChange={handleChange}
                   placeholder="Acme Corp"
-                  className={`w-full border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                    errors.companyName ? 'border-red-400 bg-red-50' : 'border-gray-300'
+                  className={`w-full border rounded-xl px-4 py-3 text-sm bg-paper focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all ${
+                    errors.companyName ? 'border-coral bg-coral/5' : 'border-ink/10'
                   }`}
                 />
-                {errors.companyName && <p className="text-red-500 text-xs mt-1">{errors.companyName}</p>}
+                {errors.companyName && <p className="text-coral text-xs mt-1">{errors.companyName}</p>}
               </div>
               <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Last Working Day <span className="text-red-500">*</span>
+                <label className="block text-sm font-medium text-ink mb-1.5">
+                  Last Working Day <span className="text-coral">*</span>
                 </label>
                 <input
                   type="date"
                   name="lastWorkingDay"
                   value={formData.lastWorkingDay}
                   onChange={handleChange}
-                  className={`w-full border rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                    errors.lastWorkingDay ? 'border-red-400 bg-red-50' : 'border-gray-300'
+                  className={`w-full border rounded-xl px-4 py-3 text-sm bg-paper focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all ${
+                    errors.lastWorkingDay ? 'border-coral bg-coral/5' : 'border-ink/10'
                   }`}
                 />
-                {errors.lastWorkingDay && <p className="text-red-500 text-xs mt-1">{errors.lastWorkingDay}</p>}
+                {errors.lastWorkingDay && <p className="text-coral text-xs mt-1">{errors.lastWorkingDay}</p>}
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Reason (optional)
-                <span className="text-gray-400 font-normal ml-1">
-                  — used in relevant templates
+              <label className="block text-sm font-medium text-ink mb-1.5">
+                Reason
+                <span className="text-slate font-normal ml-1">
+                  (optional — used in relevant templates)
                 </span>
               </label>
               <textarea
@@ -187,15 +201,18 @@ export default function ResignationForm() {
                 onChange={handleChange}
                 rows={2}
                 placeholder="e.g., pursuing a new career opportunity, personal reasons..."
-                className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                className="w-full border border-ink/10 rounded-xl px-4 py-3 text-sm bg-paper focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent resize-none transition-all"
               />
             </div>
 
             <button
               onClick={handleGenerate}
-              className="w-full bg-blue-700 text-white py-3.5 px-6 rounded-xl font-bold text-base hover:bg-blue-800 transition-colors shadow-sm"
+              className="group w-full bg-ink text-cream py-4 px-6 rounded-xl font-bold text-base hover:bg-ink-soft transition-all shadow-card flex items-center justify-center gap-2"
             >
               Generate My Resignation Letter
+              <svg className="w-5 h-5 text-gold transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </button>
           </div>
         </div>
@@ -203,7 +220,10 @@ export default function ResignationForm() {
 
       {/* Preview Panel */}
       <div id="letter-preview">
-        <h2 className="text-lg font-semibold text-gray-900 mb-3">3. Your Letter</h2>
+        <div className="flex items-center gap-3 mb-4">
+          <span className="w-8 h-8 bg-ink rounded-lg flex items-center justify-center text-gold font-display text-sm">3</span>
+          <h2 className="font-display text-lg text-ink">Your Letter</h2>
+        </div>
         <LetterPreview
           letter={generatedLetter}
           hasGenerated={hasGenerated}

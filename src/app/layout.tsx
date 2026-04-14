@@ -1,10 +1,21 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { DM_Serif_Display, DM_Sans } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const dmSerif = DM_Serif_Display({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-display',
+});
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-body',
+});
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${dmSerif.variable} ${dmSans.variable}`}>
       <head>
         {/* Google AdSense */}
         {process.env.NEXT_PUBLIC_ADSENSE_ID && (
@@ -47,7 +58,7 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className={`${inter.className} bg-white text-gray-900 min-h-screen flex flex-col`}>
+      <body className="font-body bg-cream text-ink min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

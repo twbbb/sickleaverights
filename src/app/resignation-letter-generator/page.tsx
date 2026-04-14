@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   ...genMeta({
-    title: 'Free Resignation Letter Generator — Professional Templates (2025)',
+    title: 'Free Resignation Letter Generator — Professional Templates (2026)',
     description:
       'Generate a professional resignation letter in seconds. 6 tone styles: two-week notice, immediate resignation, friendly, formal, toxic boss, and career change. Free, instant, no sign-up.',
     path: '/resignation-letter-generator/',
@@ -22,15 +22,20 @@ export default function ResignationLetterGeneratorPage() {
       />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-700 to-blue-800 text-white py-12 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block bg-blue-600 text-blue-100 text-sm font-medium px-4 py-1.5 rounded-full mb-4">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-ink noise-bg" />
+        <div className="absolute inset-0 bg-gradient-to-br from-ink via-ink-soft to-ink" />
+        <div className="absolute top-0 right-0 w-96 h-96 dot-pattern opacity-5" />
+
+        <div className="relative z-10 max-w-4xl mx-auto text-center py-14 sm:py-18 px-4">
+          <div className="animate-fade-up inline-flex items-center gap-2 bg-cream/10 backdrop-blur-sm border border-cream/10 text-cream text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-gold" />
             Free Tool
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="animate-fade-up delay-100 font-display text-3xl sm:text-4xl lg:text-5xl text-cream mb-4 tracking-tight leading-tight">
             Free Resignation Letter Generator
           </h1>
-          <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+          <p className="animate-fade-up delay-200 text-sage-light text-lg max-w-2xl mx-auto leading-relaxed">
             Create a professional resignation letter in under 60 seconds. 6 tone styles, fully
             customizable, copy or download instantly.
           </p>
@@ -43,7 +48,7 @@ export default function ResignationLetterGeneratorPage() {
       </div>
 
       {/* Main Tool */}
-      <section className="max-w-6xl mx-auto px-4 py-8">
+      <section className="max-w-6xl mx-auto px-4 py-10">
         <ResignationForm />
       </section>
 
@@ -53,38 +58,41 @@ export default function ResignationLetterGeneratorPage() {
       </div>
 
       {/* FAQ / SEO Content */}
-      <section className="max-w-4xl mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Frequently Asked Questions
-        </h2>
-        <div className="space-y-6">
-          {faqs.map((faq) => (
-            <div key={faq.q} className="border-b border-gray-200 pb-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.q}</h3>
-              <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+      <section className="max-w-4xl mx-auto px-4 py-14">
+        <div className="mb-10">
+          <span className="editorial-line mb-4" />
+          <h2 className="font-display text-2xl sm:text-3xl text-ink">
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div className="space-y-0">
+          {faqs.map((faq, i) => (
+            <div key={faq.q} className={`py-6 ${i < faqs.length - 1 ? 'border-b border-ink/5' : ''}`}>
+              <h3 className="font-display text-lg text-ink mb-2">{faq.q}</h3>
+              <p className="text-slate leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Internal Links */}
-      <section className="bg-gray-50 py-10 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <section className="bg-cream-dark py-12 px-4 relative noise-bg overflow-hidden">
+        <div className="max-w-4xl mx-auto relative z-10">
+          <h2 className="font-display text-xl text-ink mb-6">Related Guides</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <Link
               href="/blog/can-boss-deny-sick-leave/"
-              className="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all"
+              className="group bg-paper p-5 rounded-2xl border border-ink/5 card-lift"
             >
-              <div className="font-semibold text-gray-900 mb-1">Can Your Boss Deny Sick Leave?</div>
-              <div className="text-sm text-gray-500">Know your legal rights under FMLA and state laws.</div>
+              <div className="font-display text-lg text-ink mb-1 group-hover:text-gold transition-colors">Can Your Boss Deny Sick Leave?</div>
+              <div className="text-sm text-slate">Know your legal rights under FMLA and state laws.</div>
             </Link>
             <Link
               href="/blog/earned-leave-vs-sick-leave/"
-              className="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all"
+              className="group bg-paper p-5 rounded-2xl border border-ink/5 card-lift"
             >
-              <div className="font-semibold text-gray-900 mb-1">Earned Leave vs Sick Leave</div>
-              <div className="text-sm text-gray-500">Understand the difference and how to use each type.</div>
+              <div className="font-display text-lg text-ink mb-1 group-hover:text-gold transition-colors">Earned Leave vs Sick Leave</div>
+              <div className="text-sm text-slate">Understand the difference and how to use each type.</div>
             </Link>
           </div>
         </div>

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
-      <p className="text-gray-500 text-sm mb-8">Last updated: April 14, 2026</p>
+      <h1 className="font-display text-3xl text-ink mb-2">Privacy Policy</h1>
+      <p className="text-slate text-sm mb-8">Last updated: April 14, 2026</p>
 
-      <div className="prose prose-gray max-w-none space-y-8">
+      <div className="prose prose-ink max-w-none space-y-8">
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">1. Introduction</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <h2 className="font-display text-xl text-ink mb-3">1. Introduction</h2>
+          <p className="text-ink/80 leading-relaxed">
             Welcome to SickLeaveRights.com (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We are committed to
             protecting your privacy. This Privacy Policy explains how we collect, use, disclose,
             and safeguard your information when you visit our website.
@@ -23,15 +23,15 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">2. Information We Collect</h2>
-          <p className="text-gray-700 leading-relaxed mb-3">
+          <h2 className="font-display text-xl text-ink mb-3">2. Information We Collect</h2>
+          <p className="text-ink/80 leading-relaxed mb-3">
             <strong>Information You Provide:</strong> When you use our Resignation Letter
             Generator, you may enter your name, manager&apos;s name, company name, and last
             working day. <strong>This information is processed entirely in your browser and is
             never sent to our servers.</strong> We do not store, collect, or transmit the
             personal information you enter into our tools.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-ink/80 leading-relaxed">
             <strong>Automatically Collected Information:</strong> Like most websites, we
             automatically collect certain information when you visit, including IP address,
             browser type, referring URLs, and pages viewed. This is collected through analytics
@@ -40,11 +40,11 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">3. Cookies</h2>
-          <p className="text-gray-700 leading-relaxed mb-3">
+          <h2 className="font-display text-xl text-ink mb-3">3. Cookies</h2>
+          <p className="text-ink/80 leading-relaxed mb-3">
             We use cookies and similar tracking technologies to improve your experience:
           </p>
-          <ul className="list-disc pl-5 space-y-2 text-gray-700">
+          <ul className="list-disc pl-5 space-y-2 text-ink/80">
             <li>
               <strong>Google Analytics (GA4):</strong> Collects anonymous usage statistics to
               help us understand how visitors use our site. Google&apos;s privacy policy is available
@@ -59,8 +59,8 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">4. GDPR (European Users)</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <h2 className="font-display text-xl text-ink mb-3">4. GDPR (European Users)</h2>
+          <p className="text-ink/80 leading-relaxed">
             If you are located in the European Economic Area, you have certain rights regarding
             your personal data, including the right to access, correct, or delete personal data
             we hold about you. As we do not collect personal data from our tools directly, your
@@ -71,8 +71,8 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">5. CCPA (California Residents)</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <h2 className="font-display text-xl text-ink mb-3">5. CCPA (California Residents)</h2>
+          <p className="text-ink/80 leading-relaxed">
             California residents have rights under the California Consumer Privacy Act (CCPA),
             including the right to know what personal information is collected and the right to
             opt out of the sale of personal information. We do not sell personal information.
@@ -81,8 +81,8 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">6. Third-Party Links</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <h2 className="font-display text-xl text-ink mb-3">6. Third-Party Links</h2>
+          <p className="text-ink/80 leading-relaxed">
             Our site may contain links to third-party websites (such as Indeed, ZipRecruiter,
             or legal services). We have no control over the content, privacy policies, or
             practices of any third-party site. We encourage you to review the privacy policy
@@ -91,24 +91,24 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">7. Children&apos;s Privacy</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <h2 className="font-display text-xl text-ink mb-3">7. Children&apos;s Privacy</h2>
+          <p className="text-ink/80 leading-relaxed">
             Our service is not directed to children under 13. We do not knowingly collect
             personal information from children.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">8. Changes to This Policy</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <h2 className="font-display text-xl text-ink mb-3">8. Changes to This Policy</h2>
+          <p className="text-ink/80 leading-relaxed">
             We may update this Privacy Policy from time to time. We will notify you of any
             changes by posting the new Privacy Policy on this page with an updated date.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">9. Contact Us</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <h2 className="font-display text-xl text-ink mb-3">9. Contact Us</h2>
+          <p className="text-ink/80 leading-relaxed">
             If you have any questions about this Privacy Policy, please contact us via the
             contact information on our website.
           </p>

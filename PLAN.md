@@ -167,6 +167,33 @@ graph TB
 - [x] `privacy/page.tsx` 日期写死 `April 14, 2025` → 已更新为 `2026`
 - [x] `AdSlot` 组件有不必要的 `'use client'` 指令（无客户端逻辑）→ 已删除
 
+### UI 设计重构（2026-04-14）
+
+**设计方向**：从通用蓝白模板风格 → Editorial / Legal Authority（编辑式法律权威感）
+
+#### 设计系统
+- **字体**：`Inter` → `DM Serif Display`（标题）+ `DM Sans`（正文）
+- **主色调**：蓝白 → 深墨绿 `#0F2C23` + 奶白 `#FAFAF5` + 金黄 `#E5A823`
+- **辅助色**：鼠尾草绿 `#7B9E87`（辅助文本）、珊瑚红 `#D4654A`（错误/警告）
+- **动效**：CSS staggered 入场动画（`fadeUp` / `scaleIn` / `shimmer`）、卡片悬浮 lift
+- **纹理**：噪点叠层（`.noise-bg`）、圆点装饰（`.dot-pattern`）、金色装饰线（`.editorial-line`）
+
+#### 改动文件
+| 文件 | 改动内容 |
+|------|---------|
+| `globals.css` | 全新设计 token（CSS 变量）+ 动画系统 + 滚动条样式 |
+| `tailwind.config.ts` | 自定义颜色 / 字体 / 阴影 token 映射 |
+| `layout.tsx` | 引入 Google Fonts（DM Serif Display + DM Sans） |
+| `Header.tsx` | 墨绿 logo 徽章 + 纸张色背景 + 金色 CTA 箭头 |
+| `Footer.tsx` | 墨绿底色 + 噪点纹理 + 金色链接 Hover |
+| `page.tsx`（首页）| 全新 Hero（墨绿 + 金色闪光标题 + 统计栏）+ editorial 卡片 + 圆角 CTA 块 |
+| `ResignationForm.tsx` | 编号步骤标题 + 金色焦点环 + 金色生成按钮 |
+| `LetterPreview.tsx` | 纸张色预览区 + 金色 Tip 提示条 + 入场动画 |
+| `resignation-letter-generator/page.tsx` | 统一 Hero 风格 + editorial FAQ 样式 |
+| `blog/*/page.tsx`（3 篇）| 批量替换 gray/blue 色系 → ink/cream/gold/sage/coral |
+| `privacy/page.tsx` / `disclaimer/page.tsx` | 同步色系替换 |
+| `AdSlot.tsx` | 修复 `no-unused-vars` lint 错误 |
+
 ---
 
 ## 🚀 后续迭代计划
