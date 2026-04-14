@@ -14,11 +14,11 @@ const toneColors: Record<string, string> = {
 };
 
 const toneIcons: Record<string, string> = {
-  professional: '👔',
-  formal: '🏛️',
-  friendly: '😊',
-  firm: '🛡️',
-  positive: '✨',
+  professional: 'PRO',
+  formal: 'FML',
+  friendly: 'FRD',
+  firm: 'FRM',
+  positive: 'POS',
 };
 
 export default function ResignationForm() {
@@ -89,7 +89,7 @@ export default function ResignationForm() {
                 }`}
               >
                 <div className="flex items-center gap-2 mb-1">
-                  <span>{toneIcons[t.tone] || '📝'}</span>
+                  <span className="text-xs font-bold bg-gray-200 text-gray-700 px-1.5 py-0.5 rounded">{toneIcons[t.tone] || 'DOC'}</span>
                   <span className="font-semibold text-sm text-gray-900">{t.name}</span>
                 </div>
                 <p className="text-xs text-gray-500 leading-relaxed">{t.description}</p>
@@ -195,7 +195,7 @@ export default function ResignationForm() {
               onClick={handleGenerate}
               className="w-full bg-blue-700 text-white py-3.5 px-6 rounded-xl font-bold text-base hover:bg-blue-800 transition-colors shadow-sm"
             >
-              ✨ Generate My Resignation Letter
+              Generate My Resignation Letter
             </button>
           </div>
         </div>

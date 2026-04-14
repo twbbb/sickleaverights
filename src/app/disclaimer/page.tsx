@@ -14,7 +14,7 @@ export default function DisclaimerPage() {
       <p className="text-gray-500 text-sm mb-8">Last updated: April 14, 2025</p>
 
       <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-5 mb-8">
-        <p className="text-yellow-900 font-semibold text-lg mb-1">⚠️ Not Legal Advice</p>
+        <p className="text-yellow-900 font-semibold text-lg mb-1">Not Legal Advice</p>
         <p className="text-yellow-800 text-sm leading-relaxed">
           The content on SickLeaveRights.com is provided for general informational purposes only.
           Nothing on this website constitutes legal advice, and no attorney-client relationship is

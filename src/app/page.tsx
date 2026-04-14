@@ -16,62 +16,97 @@ export const metadata: Metadata = {
   },
 };
 
+const ToolIcon = ({ type }: { type: string }) => {
+  if (type === 'letter') return (
+    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+  );
+  if (type === 'alert') return (
+    <svg className="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+    </svg>
+  );
+  if (type === 'medical') return (
+    <svg className="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+    </svg>
+  );
+  return (
+    <svg className="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+    </svg>
+  );
+};
+
 const tools = [
   {
-    icon: '📝',
+    iconType: 'letter',
     title: 'Resignation Letter Generator',
     description:
       'Generate a professional resignation letter in seconds. 6 tone styles — two-week notice, immediate, friendly, and more.',
     href: '/resignation-letter-generator/',
     cta: 'Generate Free Letter →',
-    badge: '🔥 Most Popular',
+    badge: 'Most Popular',
     badgeColor: 'bg-red-100 text-red-700',
   },
   {
-    icon: '🔥',
+    iconType: 'alert',
     title: 'Can Boss Force Earned Leave?',
     description:
       'Manager insisting you use vacation instead of sick leave? Know your legal rights — including India LWP rules and US state laws.',
     href: '/blog/can-boss-force-earned-leave/',
     cta: 'Know Your Rights →',
-    badge: '🚨 This Week',
+    badge: 'This Week',
     badgeColor: 'bg-red-100 text-red-700',
   },
   {
-    icon: '🏥',
+    iconType: 'medical',
     title: 'Sick Leave Rights Guide',
     description:
       'Can your boss deny your sick leave? Learn your legal rights under FMLA, state laws, and more.',
     href: '/blog/can-boss-deny-sick-leave/',
     cta: 'Learn Your Rights →',
-    badge: '📈 Trending',
+    badge: 'Trending',
     badgeColor: 'bg-orange-100 text-orange-700',
   },
   {
-    icon: '📊',
+    iconType: 'chart',
     title: 'Earned Leave vs Sick Leave',
     description:
       'Understand the difference between earned leave, sick leave, PTO, and other types of employee leave.',
     href: '/blog/earned-leave-vs-sick-leave/',
     cta: 'Read the Guide →',
-    badge: '📚 Essential',
+    badge: 'Essential',
     badgeColor: 'bg-blue-100 text-blue-700',
   },
 ];
 
 const features = [
   {
-    icon: '🆓',
+    icon: (
+      <svg className="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
     title: '100% Free',
     description: 'All tools are completely free to use. No sign-up, no credit card required.',
   },
   {
-    icon: '⚡',
+    icon: (
+      <svg className="w-10 h-10 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    ),
     title: 'Instant Results',
     description: 'Get your resignation letter or know your rights in under 60 seconds.',
   },
   {
-    icon: '🌍',
+    icon: (
+      <svg className="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
     title: 'Global Coverage',
     description: 'Covers US (all 50 states), UK, India, and 30+ countries worldwide.',
   },
@@ -93,7 +128,7 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block bg-blue-600 text-blue-100 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
-            ⚖️ Free Workplace Rights Tools
+            Free Workplace Rights Tools
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Know Your Rights.
@@ -109,13 +144,13 @@ export default function HomePage() {
               href="/resignation-letter-generator/"
               className="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg"
             >
-              📝 Generate Resignation Letter
+              Generate Resignation Letter
             </Link>
             <Link
               href="/blog/can-boss-deny-sick-leave/"
               className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors"
             >
-              🏥 Check Sick Leave Rights
+              Check Sick Leave Rights
             </Link>
           </div>
         </div>
@@ -138,7 +173,7 @@ export default function HomePage() {
                 className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="text-4xl">{tool.icon}</span>
+                  <ToolIcon type={tool.iconType} />
                   <span
                     className={`text-xs font-semibold px-2.5 py-1 rounded-full ${tool.badgeColor}`}
                   >
@@ -170,7 +205,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((f) => (
               <div key={f.title} className="text-center">
-                <div className="text-5xl mb-4">{f.icon}</div>
+                <div className="flex justify-center mb-4">{f.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{f.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{f.description}</p>
               </div>

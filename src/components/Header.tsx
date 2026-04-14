@@ -6,7 +6,7 @@ import Link from 'next/link';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/resignation-letter-generator/', label: 'Resignation Letter' },
-  { href: '/blog/can-boss-force-earned-leave/', label: '🔥 Force Earned Leave?' },
+  { href: '/blog/can-boss-force-earned-leave/', label: 'Force Earned Leave?' },
   { href: '/blog/can-boss-deny-sick-leave/', label: 'Sick Leave Rights' },
   { href: '/blog/earned-leave-vs-sick-leave/', label: 'Leave Types' },
 ];
@@ -20,7 +20,9 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-blue-700">
-            <span className="text-2xl">⚖️</span>
+            <svg className="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l9-3 9 3M3 6v12l9 3 9-3V6M12 3v18" />
+            </svg>
             <span>SickLeaveRights</span>
           </Link>
 

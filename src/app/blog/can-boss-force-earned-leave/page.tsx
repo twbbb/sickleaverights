@@ -61,7 +61,7 @@ export default function CanBossForceEarnedLeavePage() {
       <article className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
           <div className="inline-block bg-orange-100 text-orange-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
-            🔥 Trending This Week
+            Trending This Week
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
             Can Your Boss Force You to Use Earned Leave Instead of Sick Leave?
@@ -72,11 +72,11 @@ export default function CanBossForceEarnedLeavePage() {
             This is happening to thousands of workers right now — and it may be <strong>illegal</strong>.
           </p>
           <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
-            <span>📅 Updated April 14, 2026</span>
+            <span>Updated April 14, 2026</span>
             <span>•</span>
-            <span>⏱️ 7 min read</span>
+            <span>7 min read</span>
             <span>•</span>
-            <span>⚖️ Legal guide</span>
+            <span>Legal guide</span>
           </div>
         </header>
 
@@ -86,7 +86,7 @@ export default function CanBossForceEarnedLeavePage() {
         {/* Viral Context Box */}
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-5 mb-10">
           <h2 className="font-bold text-orange-900 mb-3 flex items-center gap-2">
-            <span>📢</span> Why This Is Trending Right Now
+            Why This Is Trending Right Now
           </h2>
           <div className="space-y-3 text-sm text-orange-800">
             {viralEvents.map((event) => (
@@ -104,7 +104,7 @@ export default function CanBossForceEarnedLeavePage() {
         {/* Table of Contents */}
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
           <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wider">
-            📋 Table of Contents
+            Table of Contents
           </h2>
           <ol className="space-y-1.5 text-sm">
             {[
@@ -132,20 +132,20 @@ export default function CanBossForceEarnedLeavePage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Answer</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
               <div className="bg-red-50 border border-red-200 rounded-xl p-4">
-                <h3 className="font-bold text-red-900 mb-2">❌ Generally NOT Legal</h3>
+                <h3 className="font-bold text-red-900 mb-2">Generally NOT Legal</h3>
                 <p className="text-red-800 text-sm leading-relaxed">
                   If you have accrued sick leave available, your employer <strong>cannot force you to use vacation/earned leave</strong> instead — especially for FMLA-qualifying conditions or in states with mandatory sick leave laws.
                 </p>
               </div>
               <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-                <h3 className="font-bold text-yellow-900 mb-2">⚠️ Sometimes Allowed</h3>
+                <h3 className="font-bold text-yellow-900 mb-2">Sometimes Allowed</h3>
                 <p className="text-yellow-800 text-sm leading-relaxed">
                   In states without mandatory sick leave laws, and for non-FMLA absences, employers may have more discretion — <strong>but only if their written policy explicitly states this</strong>.
                 </p>
               </div>
             </div>
             <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 text-yellow-900 text-sm">
-              <strong>⚠️ Disclaimer:</strong> This guide provides general legal information, not legal advice. For your specific situation, consult a licensed employment attorney.
+              <strong>Disclaimer:</strong> This guide provides general legal information, not legal advice. For your specific situation, consult a licensed employment attorney.
             </div>
           </section>
 
@@ -199,7 +199,7 @@ export default function CanBossForceEarnedLeavePage() {
             <div className="space-y-4">
               {whenIllegalReasons.map((item) => (
                 <div key={item.title} className="bg-red-50 border border-red-200 rounded-xl p-4">
-                  <h3 className="font-semibold text-red-900 mb-1">🚫 {item.title}</h3>
+                  <h3 className="font-semibold text-red-900 mb-1">{item.title}</h3>
                   <p className="text-red-800 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -234,7 +234,7 @@ export default function CanBossForceEarnedLeavePage() {
           {/* India Section */}
           <section id="india-rules" className="mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              🇮🇳 India-Specific Rules: EL, CL, SL, and LWP
+              India-Specific Rules: EL, CL, SL, and LWP
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               The recent <strong>Noida founder incident</strong> (April 2026) — where a startup founder refused to approve a same-day sick leave and threatened to mark it as Leave Without Pay (LWP) — highlights a common misunderstanding of Indian labor law.
@@ -266,7 +266,7 @@ export default function CanBossForceEarnedLeavePage() {
               </table>
             </div>
             <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-              <h3 className="font-semibold text-orange-900 mb-2">⚖️ What Indian Law Actually Says</h3>
+              <h3 className="font-semibold text-orange-900 mb-2">What Indian Law Actually Says</h3>
               <ul className="space-y-2 text-orange-800 text-sm">
                 {[
                   'Under the Factories Act and most state Shops & Establishments Acts, Sick Leave (SL) and Earned Leave (EL) are separate entitlements.',
@@ -303,7 +303,7 @@ export default function CanBossForceEarnedLeavePage() {
             {/* Job Search CTA */}
             <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-5">
               <h3 className="font-bold text-blue-900 mb-2">
-                🔍 Is this a pattern? It might be time to move on.
+                Is this a pattern? It might be time to move on.
               </h3>
               <p className="text-blue-800 text-sm mb-3">
                 If your employer consistently violates your leave rights, that&apos;s a red flag about the entire culture. Thousands of employees use these platforms to find workplaces that actually respect their rights.
@@ -380,13 +380,13 @@ export default function CanBossForceEarnedLeavePage() {
                 href="/resignation-letter-generator/"
                 className="inline-block bg-white text-blue-700 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors"
               >
-                📝 Generate Free Resignation Letter →
+                Generate Free Resignation Letter →
               </Link>
               <Link
                 href="/blog/can-boss-deny-sick-leave/"
                 className="inline-block border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-colors"
               >
-                🏥 Can Boss Deny Sick Leave?
+                Can Boss Deny Sick Leave?
               </Link>
             </div>
           </div>
@@ -427,19 +427,19 @@ const leaveComparisonRows = [
 
 const whenLegalReasons = [
   {
-    title: '✅ No mandatory sick leave law in your state/country',
+    title: 'No mandatory sick leave law in your state/country',
     desc: 'In US states without mandatory paid sick leave (e.g., Texas, Florida, Georgia), employers have more discretion over leave policies. If your company policy says PTO covers all absences, they may be within their rights.',
   },
   {
-    title: '✅ Your company uses a unified PTO bank',
+    title: 'Your company uses a unified PTO bank',
     desc: 'Some companies combine sick and vacation into a single PTO pool. If this is clearly stated in your employment contract or handbook, your employer can require you to draw from that pool for illness.',
   },
   {
-    title: '✅ You have no sick leave balance remaining',
+    title: 'You have no sick leave balance remaining',
     desc: 'If you\'ve exhausted your sick leave entitlement, your employer may require you to use vacation/earned leave or take unpaid leave for additional absences.',
   },
   {
-    title: '✅ FMLA concurrent use (with written policy)',
+    title: 'FMLA concurrent use (with written policy)',
     desc: 'Under FMLA, employers can require paid leave to run concurrently with FMLA leave — but this is about running them simultaneously, not substituting one for the other.',
   },
 ];

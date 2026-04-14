@@ -25,7 +25,7 @@ export default function ResignationLetterGeneratorPage() {
       <section className="bg-gradient-to-r from-blue-700 to-blue-800 text-white py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block bg-blue-600 text-blue-100 text-sm font-medium px-4 py-1.5 rounded-full mb-4">
-            📝 Free Tool
+            Free Tool
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">
             Free Resignation Letter Generator
@@ -76,14 +76,14 @@ export default function ResignationLetterGeneratorPage() {
               href="/blog/can-boss-deny-sick-leave/"
               className="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all"
             >
-              <div className="font-semibold text-gray-900 mb-1">🏥 Can Your Boss Deny Sick Leave?</div>
+              <div className="font-semibold text-gray-900 mb-1">Can Your Boss Deny Sick Leave?</div>
               <div className="text-sm text-gray-500">Know your legal rights under FMLA and state laws.</div>
             </Link>
             <Link
               href="/blog/earned-leave-vs-sick-leave/"
               className="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all"
             >
-              <div className="font-semibold text-gray-900 mb-1">📊 Earned Leave vs Sick Leave</div>
+              <div className="font-semibold text-gray-900 mb-1">Earned Leave vs Sick Leave</div>
               <div className="text-sm text-gray-500">Understand the difference and how to use each type.</div>
             </Link>
           </div>

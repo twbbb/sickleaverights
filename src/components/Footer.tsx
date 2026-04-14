@@ -10,7 +10,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 text-white font-bold text-lg mb-3">
-              <span>⚖️</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l9-3 9 3M3 6v12l9 3 9-3V6M12 3v18" />
+              </svg>
               <span>SickLeaveRights</span>
             </div>
             <p className="text-sm leading-relaxed">

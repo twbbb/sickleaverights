@@ -49,7 +49,7 @@ export default function CanBossDenySickLeavePage() {
       <article className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
           <div className="inline-block bg-red-100 text-red-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
-            🏥 Sick Leave Rights
+            Sick Leave Rights
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
             Can Your Boss Deny Sick Leave? Your Complete Legal Guide (2026)
@@ -60,11 +60,11 @@ export default function CanBossDenySickLeavePage() {
             job and protect your health.
           </p>
           <div className="flex items-center gap-4 text-sm text-gray-500">
-            <span>📅 Updated April 14, 2026</span>
+            <span>Updated April 14, 2026</span>
             <span>•</span>
-            <span>⏱️ 8 min read</span>
+            <span>8 min read</span>
             <span>•</span>
-            <span>⚖️ Legal guide</span>
+            <span>Legal guide</span>
           </div>
         </header>
 
@@ -74,7 +74,7 @@ export default function CanBossDenySickLeavePage() {
         {/* Table of Contents */}
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
           <h2 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wider">
-            📋 Table of Contents
+            Table of Contents
           </h2>
           <ol className="space-y-1.5 text-sm">
             {[
@@ -120,7 +120,7 @@ export default function CanBossDenySickLeavePage() {
               ))}
             </ul>
             <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 text-yellow-900 text-sm">
-              <strong>⚠️ Important:</strong> This guide provides general legal information, not
+              <strong>Important:</strong> This guide provides general legal information, not
               legal advice. For your specific situation, consult a licensed employment attorney.
             </div>
           </section>
@@ -287,7 +287,7 @@ export default function CanBossDenySickLeavePage() {
             {/* Job Search CTA / Affiliate */}
             <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-5">
               <h3 className="font-bold text-blue-900 mb-2">
-                🔍 Ready to find a better workplace?
+                Ready to find a better workplace?
               </h3>
               <p className="text-blue-800 text-sm mb-3">
                 If your sick leave rights are consistently being violated, it may be time to explore
@@ -371,7 +371,7 @@ export default function CanBossDenySickLeavePage() {
               href="/resignation-letter-generator/"
               className="inline-block bg-white text-blue-700 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors"
             >
-              📝 Generate Free Resignation Letter →
+              Generate Free Resignation Letter →
             </Link>
           </div>
         </div>
@@ -392,19 +392,19 @@ const stateLaws = [
 
 const canDenyReasons = [
   {
-    title: '❌ You don\'t qualify for FMLA',
+    title: 'You don\'t qualify for FMLA',
     desc: 'If you haven\'t worked for your employer long enough, or your employer is too small, FMLA protection doesn\'t apply.',
   },
   {
-    title: '❌ Your state has no mandatory paid sick leave law',
+    title: 'Your state has no mandatory paid sick leave law',
     desc: 'About half of US states don\'t require paid sick leave. In these states, if your company policy doesn\'t guarantee it, the employer has wide discretion.',
   },
   {
-    title: '❌ You violated the notice procedure',
+    title: 'You violated the notice procedure',
     desc: 'If your employer requires advance notice (except for emergencies) and you didn\'t follow the procedure, they may be able to deny the leave — though they often can\'t count it against your FMLA entitlement.',
   },
   {
-    title: '❌ Operational necessity (non-FMLA situations)',
+    title: 'Operational necessity (non-FMLA situations)',
     desc: 'For non-protected leave (casual sick days beyond your FMLA entitlement), employers can sometimes deny leave if business operations would be severely impacted.',
   },
 ];

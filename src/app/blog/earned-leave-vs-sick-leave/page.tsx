@@ -45,7 +45,7 @@ export default function EarnedLeaveVsSickLeavePage() {
       <article className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
           <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
-            📊 Leave Types Guide
+            Leave Types Guide
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
             Earned Leave vs Sick Leave: Key Differences Explained (2025)
@@ -56,9 +56,9 @@ export default function EarnedLeaveVsSickLeavePage() {
             English — so you can use your entitlements confidently.
           </p>
           <div className="flex items-center gap-4 text-sm text-gray-500">
-            <span>📅 April 14, 2026</span>
+            <span>April 14, 2026</span>
             <span>•</span>
-            <span>⏱️ 7 min read</span>
+            <span>7 min read</span>
           </div>
         </header>
 
@@ -67,7 +67,7 @@ export default function EarnedLeaveVsSickLeavePage() {
         {/* Quick Reference Table */}
         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 mb-10 border border-blue-100">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
-            ⚡ Quick Reference: Earned Leave vs Sick Leave
+            Quick Reference: Earned Leave vs Sick Leave
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-sm">
@@ -169,7 +169,7 @@ export default function EarnedLeaveVsSickLeavePage() {
               {otherLeaveTypes.map((leave) => (
                 <div key={leave.name} className="bg-gray-50 rounded-xl p-4 border border-gray-200">
                   <h3 className="font-bold text-gray-900 mb-1">
-                    {leave.icon} {leave.name}
+                    {leave.name}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{leave.desc}</p>
                 </div>
@@ -186,9 +186,9 @@ export default function EarnedLeaveVsSickLeavePage() {
                 <thead>
                   <tr className="bg-gray-100">
                     <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Aspect</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">🇺🇸 USA</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">🇮🇳 India</th>
-                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">🇬🇧 UK</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">USA</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">India</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">UK</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -253,13 +253,13 @@ export default function EarnedLeaveVsSickLeavePage() {
                 href="/resignation-letter-generator/"
                 className="inline-block bg-white text-blue-700 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors"
               >
-                📝 Generate Free Resignation Letter →
+                Generate Free Resignation Letter →
               </Link>
               <Link
                 href="/blog/can-boss-deny-sick-leave/"
                 className="inline-block border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-colors"
               >
-                🏥 Can Boss Deny Sick Leave?
+                Can Boss Deny Sick Leave?
               </Link>
             </div>
           </div>
@@ -282,27 +282,27 @@ const comparisonRows = [
 
 const otherLeaveTypes = [
   {
-    icon: '🏖️',
+    icon: '',
     name: 'PTO (Paid Time Off)',
     desc: 'A US policy where sick leave and vacation are combined into a single "bank" of days. More flexible, but you must budget both vacation and illness from the same pool.',
   },
   {
-    icon: '👶',
+    icon: '',
     name: 'Casual Leave',
     desc: 'Common in India and some Commonwealth countries — short-notice unplanned leave for personal reasons. Typically 7-12 days per year, cannot be carried over.',
   },
   {
-    icon: '🤱',
+    icon: '',
     name: 'Maternity / Paternity Leave',
     desc: 'Leave for new parents. US federal law provides 12 weeks unpaid under FMLA. Many states add paid leave. India provides 26 weeks paid maternity leave for the first two children.',
   },
   {
-    icon: '💔',
+    icon: '',
     name: 'Bereavement Leave',
     desc: 'Leave to mourn the death of a family member. The US has no federal mandate. Most employers provide 3-5 days. Oregon was the first state to mandate paid bereavement leave.',
   },
   {
-    icon: '🌡️',
+    icon: '',
     name: 'FMLA Leave',
     desc: 'Up to 12 weeks of unpaid, job-protected leave per year for serious health conditions or family care. Requires FMLA eligibility (50+ employee company, 12+ months tenure).',
   },
