@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sickleaverights.com
+
+# Sitemaps
+Sitemap: https://sickleaverights.com/sitemap.xml

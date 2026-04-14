@@ -1,0 +1,44 @@
+[
+  {
+    "id": "two-week-notice",
+    "name": "Two-Week Notice",
+    "description": "Standard professional resignation with two weeks notice — the most common and safest option.",
+    "tone": "professional",
+    "template": "Dear {{managerName}},\n\nI am writing to formally notify you of my resignation from my position at {{companyName}}, effective {{lastWorkingDay}}.\n\nThis was not an easy decision, and I am grateful for the opportunities and experiences I have gained during my time here. I have genuinely valued working with such a talented team.\n\nOver the next two weeks, I am committed to ensuring a smooth transition. I am happy to help train a replacement, document my current projects, and complete any outstanding work to the best of my ability.\n\nThank you for your support and leadership. I wish you and the entire {{companyName}} team continued success.\n\nSincerely,\n{{yourName}}"
+  },
+  {
+    "id": "immediate",
+    "name": "Immediate Resignation",
+    "description": "Resign effective immediately — use when two weeks notice is not possible or safe.",
+    "tone": "formal",
+    "template": "Dear {{managerName}},\n\nI regret to inform you that I must resign from my position at {{companyName}} effective immediately.\n\nDue to {{reason}}, I am unable to continue in my role or provide the standard notice period. I sincerely apologize for any inconvenience this may cause.\n\nI will ensure that all critical information, passwords, and project documentation are transferred appropriately before my departure.\n\nThank you for the opportunities you have provided during my tenure.\n\nSincerely,\n{{yourName}}"
+  },
+  {
+    "id": "professional",
+    "name": "Professional & Formal",
+    "description": "Highly formal tone — ideal for corporate environments or senior positions.",
+    "tone": "formal",
+    "template": "Dear {{managerName}},\n\nPlease accept this letter as formal notification of my resignation from my position at {{companyName}}, with my last day of employment being {{lastWorkingDay}}.\n\nI want to express my sincere appreciation for the professional development opportunities and meaningful projects I have been privileged to work on during my tenure. The skills and experiences I have gained here will undoubtedly serve me well throughout my career.\n\nI am fully committed to completing all active responsibilities and ensuring a comprehensive knowledge transfer to minimize disruption to the team and our clients.\n\nI am grateful for your mentorship and wish {{companyName}} continued growth and success.\n\nRespectfully,\n{{yourName}}"
+  },
+  {
+    "id": "friendly",
+    "name": "Friendly & Warm",
+    "description": "Maintain strong relationships — perfect when leaving on good terms and want to stay connected.",
+    "tone": "friendly",
+    "template": "Hi {{managerName}},\n\nI wanted to share some personal news — after much thought, I've decided to move on from {{companyName}}. My last day will be {{lastWorkingDay}}.\n\nI want you to know how much I've appreciated being part of this team. Working here has been a genuinely rewarding experience, and I'm proud of what we've accomplished together.\n\nI'm absolutely committed to making this transition as smooth as possible. Let's catch up this week to figure out the best handover plan.\n\nI hope we can stay in touch — this team means a lot to me, and I'm rooting for everyone's success!\n\nWarm regards,\n{{yourName}}"
+  },
+  {
+    "id": "toxic-boss",
+    "name": "Toxic Workplace (Professional)",
+    "description": "Leave a difficult environment professionally — protect yourself legally while being clear.",
+    "tone": "firm",
+    "template": "Dear {{managerName}},\n\nI am writing to formally resign from my position at {{companyName}}, effective {{lastWorkingDay}}.\n\nAfter careful consideration, I have concluded that this position is no longer aligned with my professional values and career goals. I believe this decision is in the best interest of both parties.\n\nI will fulfill my responsibilities through my final day and complete all necessary transition documentation. Please advise on the formal offboarding process and the return of any company property.\n\nThank you.\n\nSincerely,\n{{yourName}}"
+  },
+  {
+    "id": "career-change",
+    "name": "Career Change",
+    "description": "Leaving for a new industry or opportunity — express gratitude while looking forward.",
+    "tone": "positive",
+    "template": "Dear {{managerName}},\n\nI am writing to let you know that I will be resigning from my position at {{companyName}}, with my last working day being {{lastWorkingDay}}.\n\nI have made the exciting decision to pursue a new direction — {{reason}}. While this was a difficult choice, I am energized by the possibilities ahead.\n\nMy time at {{companyName}} has been invaluable. The skills, experiences, and relationships I've built here have shaped who I am as a professional, and I carry that forward with gratitude.\n\nI am fully dedicated to a smooth transition over the coming weeks. Thank you for being such an important part of my career journey.\n\nBest wishes,\n{{yourName}}"
+  }
+]
