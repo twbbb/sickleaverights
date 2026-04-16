@@ -27,6 +27,13 @@ export const metadata: Metadata = {
   keywords: ['sick leave rights', 'resignation letter generator', 'employee rights', 'workplace rights'],
   metadataBase: new URL('https://sickleaverights.com'),
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
+    ],
+    shortcut: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
